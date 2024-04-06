@@ -43,7 +43,8 @@ app.UseKissLogMiddleware(options => {
     options.Listeners
         .Add(new RequestLogsApiListener(new Application(builder.Configuration["KissLog.OrganizationId"], builder.Configuration["KissLog.ApplicationId"]))
         {
-            ApiUrl = builder.Configuration["KissLog.ApiUrl"]
+            // ApiUrl = builder.Configuration["KissLog.ApiUrl"]
+            ApiUrl = "https://api.logbee.net"
         });
 
     options.Listeners
