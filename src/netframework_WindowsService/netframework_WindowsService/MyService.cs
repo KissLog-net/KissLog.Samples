@@ -70,9 +70,9 @@ namespace netframework_WindowsService
         private static void ConfigureKissLog()
         {
             KissLogConfiguration.Listeners
-                .Add(new RequestLogsApiListener(new Application(ConfigurationManager.AppSettings["KissLog.OrganizationId"], ConfigurationManager.AppSettings["KissLog.ApplicationId"]))
+                .Add(new RequestLogsApiListener(new Application(ConfigurationManager.AppSettings["LogBee.OrganizationId"], ConfigurationManager.AppSettings["LogBee.ApplicationId"]))
                 {
-                    ApiUrl = ConfigurationManager.AppSettings["KissLog.ApiUrl"],
+                    ApiUrl = ConfigurationManager.AppSettings["LogBee.ApiUrl"],
                     UseAsync = false
                 });
 
