@@ -44,9 +44,9 @@ namespace netframework_MVC
         private void ConfigureKissLog()
         {
             KissLogConfiguration.Listeners
-                .Add(new RequestLogsApiListener(new Application(ConfigurationManager.AppSettings["KissLog.OrganizationId"], ConfigurationManager.AppSettings["KissLog.ApplicationId"]))
+                .Add(new RequestLogsApiListener(new Application(ConfigurationManager.AppSettings["LogBee.OrganizationId"], ConfigurationManager.AppSettings["LogBee.ApplicationId"]))
                 {
-                    ApiUrl = ConfigurationManager.AppSettings["KissLog.ApiUrl"]
+                    ApiUrl = ConfigurationManager.AppSettings["LogBee.ApiUrl"]
                 })
                 .Add(new LocalTextFileListener(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "logs")));
 
