@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="KissLog.AspNetCore" Version="5.1.2" />
+    <PackageReference Include="KissLog.AspNetCore" Version="5.2.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
   </ItemGroup>
 </Project>
