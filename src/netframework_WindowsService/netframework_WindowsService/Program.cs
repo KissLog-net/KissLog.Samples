@@ -39,7 +39,7 @@ namespace netframework_WindowsService
 
         static string CreateMessage()
         {
-            string applicationId = ConfigurationManager.AppSettings["KissLog.ApplicationId"];
+            string applicationId = ConfigurationManager.AppSettings["LogBee.ApplicationId"];
             string logsUrl = $"https://kisslog.net/RequestLogs/{applicationId}/kisslogsampleapp";
             string textLogs = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "logs");
 
